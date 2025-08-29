@@ -12,7 +12,10 @@ def view_tasks():
     for i, task in enumerate(task,start=1):
         print(f"{i}. {task}")
 # Step 4: Delete a task
-
+def delete_task():
+    for i in tasks:
+        if len(i)>3:
+            tasks.pop(i)
 
 # Step 5: Mark task complete
 
