@@ -14,8 +14,9 @@ def view_tasks():
 # Step 4: Delete a task
 def delete_task():
     for i in tasks:
-        if len(i)>3:
+        if tasks.index(i) % 2 != 0:
             tasks.pop(i)
+        print(f"Deleted: {i}")
 
 # Step 5: Mark task complete
 
